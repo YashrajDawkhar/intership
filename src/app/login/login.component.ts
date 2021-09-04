@@ -16,17 +16,16 @@ export class LoginComponent implements OnInit {
   }
 
   loginD = new FormGroup({
-    email: new FormControl('', Validators.required),
-    pass: new FormControl('', Validators.required)
-  
+    email:new FormControl(''),
+    password:new FormControl('')
   })
 
   loginData(){
     console.log(this.loginD.value);
     
-    // this.service.postLogin(this.login.value).subscribe(res=>{
-    //   console.log(res);
-    //   this.router.navigate(['/register'])
-    // })
+    this.service.postLogin(this.loginD.value).subscribe((res:any)=>{
+      localStorage.setItem("token",res.token)
+      this.router.navigate(['/home'])
+    })
   }
 }

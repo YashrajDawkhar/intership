@@ -2,47 +2,51 @@
     <div class="left">
         <app-common-login-register></app-common-login-register>
     </div>
-    <div class="right" >
-        <div class="box" [formGroup]="loginD" (ngSubmit)="loginData()" >
-            <span class="LoginRegister">
-                <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
-                    Login
+    <div class="right">
+        <div class="box">
+            <form [formGroup]="loginD" (ngSubmit)="loginData()">
+                <span class="LoginRegister">
+                    <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
+                        Login
+                    </span>
+                    <span style="border-bottom:2px solid rgb(189, 186, 186);padding:5px 16px;" routerLink="/register">
+                        Register
+                    </span>
                 </span>
-                <span style="border-bottom:2px solid rgb(189, 186, 186);padding:5px 16px;" routerLink="/register">
-                    Register
-                </span>
-            </span>
-            <span id="paddBottom">
+                <span id="paddBottom">
 
-                <h5 style="padding-bottom:10px;">Email/Mobile Number</h5>
-                <input type="text" pInputText formControlName="email">
+                    <h5 style="padding-bottom:10px;">Email/Mobile Number</h5>
+                    <input type="text" pInputText formControlName="email">
 
-            </span>
-
-            <span id="paddBottom">
-
-                <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
-                <input type="password" pPassword formControlName="pass"/>
-                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
-            </span>
-            <div class="btnCon">
-                <span class="btn">
-                    Login
                 </span>
 
-                <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text" type="submit"
-            [disabled]="loginD.invalid" style="color:rgb(207, 0, 52);"></button>
-            
-                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Not a member yet? <b
-                        style="color: black;cursor: pointer;">Register</b></h5>
-            </div>
+                <span id="paddBottom">
+
+                    <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
+                    <input type="password" pPassword formControlName="password" />
+                    <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
+                </span>
+                <div class="btnCon">
+
+                    <button pButton pRipple type="button" label="Login" class="p-button-raised p-button-text"
+                        type="submit" [disabled]="loginD.invalid"
+                        style="color:rgb(255, 255, 255);background-color: #192b3f;"></button>
+
+
+
+                    <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Not a member yet? <b
+                            style="color: black;cursor: pointer;">Register</b></h5>
+                </div>
+
+            </form>
         </div>
     </div>
 </div>
 
-<div class="secondContainer" >
+<div class="secondContainer">
     <div class="second">
-        <div class="box" [formGroup]="loginD" (ngSubmit)="loginData()">
+        <div class="box" >
+            <form [formGroup]="loginD" (ngSubmit)="loginData()">
             <span class="LoginRegister">
                 <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
                     Login
@@ -54,23 +58,23 @@
             <span id="paddBottom">
 
                 <h5 style="padding-bottom:10px;">Email/Mobile Number</h5>
-                <input type="text" pInputText pInputText formControlName="email" >
+                <input type="text" pInputText pInputText formControlName="email">
 
             </span>
 
             <span id="paddBottom">
 
                 <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
-                <input type="password" pPassword formControlName="pass" />
+                <input type="password" pPassword formControlName="password" />
                 <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
             </span>
             <div class="btnCon">
-                <span class="btn">
-                    Login
-                </span>
+                <button pButton pRipple type="button" label="Login" class="p-button-raised p-button-text" type="submit"
+                    [disabled]="loginD.invalid" style="color:rgb(255, 255, 255);background-color: #192b3f;"></button>
                 <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Not a member yet? <b
                         style="color: black;cursor: pointer;">Register</b></h5>
             </div>
+        </form>
         </div>
     </div>
 </div>

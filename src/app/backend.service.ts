@@ -16,4 +16,8 @@ export class BackendService {
     return this.http.post(this.url,data)
   }
 
+  isLogin(){
+    return !!localStorage.getItem('token')
+  }
+
 }
