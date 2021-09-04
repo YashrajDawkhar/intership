@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   })
 
   loginData(){
-    console.log(this.loginD.value);
+    
     
     this.service.postLogin(this.loginD.value).subscribe((res:any)=>{
       localStorage.setItem("token",res.token)
