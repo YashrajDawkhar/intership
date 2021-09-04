@@ -1,1 +1,76 @@
-<p>login works!</p>
+<div class="first">
+    <div class="left">
+        <app-common-login-register></app-common-login-register>
+    </div>
+    <div class="right" >
+        <div class="box" [formGroup]="loginD" (ngSubmit)="loginData()" >
+            <span class="LoginRegister">
+                <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
+                    Login
+                </span>
+                <span style="border-bottom:2px solid rgb(189, 186, 186);padding:5px 16px;" routerLink="/register">
+                    Register
+                </span>
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;">Email/Mobile Number</h5>
+                <input type="text" pInputText formControlName="email">
+
+            </span>
+
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
+                <input type="password" pPassword formControlName="pass"/>
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
+            </span>
+            <div class="btnCon">
+                <span class="btn">
+                    Login
+                </span>
+
+                <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text" type="submit"
+            [disabled]="loginD.invalid" style="color:rgb(207, 0, 52);"></button>
+            
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Not a member yet? <b
+                        style="color: black;cursor: pointer;">Register</b></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="secondContainer" >
+    <div class="second">
+        <div class="box" [formGroup]="loginD" (ngSubmit)="loginData()">
+            <span class="LoginRegister">
+                <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
+                    Login
+                </span>
+                <span style="border-bottom:2px solid rgb(189, 186, 186);padding:5px 16px;" routerLink="/register">
+                    Register
+                </span>
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;">Email/Mobile Number</h5>
+                <input type="text" pInputText pInputText formControlName="email" >
+
+            </span>
+
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
+                <input type="password" pPassword formControlName="pass" />
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
+            </span>
+            <div class="btnCon">
+                <span class="btn">
+                    Login
+                </span>
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Not a member yet? <b
+                        style="color: black;cursor: pointer;">Register</b></h5>
+            </div>
+        </div>
+    </div>
+</div>

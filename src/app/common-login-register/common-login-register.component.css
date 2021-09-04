@@ -1,0 +1,16 @@
+.contain{
+    display: flex;
+    margin: 57px;
+    height:80%;
+    flex-direction: column;
+}
+
+.img img{
+   
+    width:350px;
+    
+}
+
+.info{
+    color:white;
+}

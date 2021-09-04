@@ -1,1 +1,112 @@
-<p>register works!</p>
+<div class="first">
+    <div class="left">
+        <app-common-login-register></app-common-login-register>
+    </div>
+    <div class="right">
+        <div class="box">
+            <span class="LoginRegister">
+                <span style="border-bottom:2px solid rgb(189, 186, 186);padding:5px 16px;" routerLink="/login">
+                    Login
+                </span>
+                <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
+                    Register
+                </span>
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;">Full Name</h5>
+                <input type="text" pInputText placeholder="Akash">
+
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;padding-top:6px;">Email</h5>
+                <input type="text" pInputText placeholder="dummy@gmail.com">
+
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;padding-top:6px;">Mobile Number</h5>
+                <p-inputNumber mode="decimal" inputId="withoutgrouping" [useGrouping]="false" placeholder="9000002365"></p-inputNumber>
+
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;padding-top:6px;" >Gender</h5>
+                <input type="text" pInputText placeholder="Male">
+
+            </span>
+
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
+                <input type="password" pPassword value="5645456454" />
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
+            </span>
+
+
+            <div class="btnCon">
+                <span class="btn">
+                    Register
+                </span>
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Already a member? <b
+                        style="color: black;cursor: pointer;">Login</b></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="secondContainer">
+    <div class="second">
+        <div class="box">
+            <span class="LoginRegister">
+                <span style="border-bottom:2px solid rgb(189, 186, 186);padding:5px 16px;" routerLink="/login">
+                    Login
+                </span>
+                <span style="border-bottom:2px solid black;padding:5px 16px;color: black;font-weight:700;">
+                    Register
+                </span>
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;">Full Name</h5>
+                <input type="text" pInputText>
+
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;padding-top:6px;">Email</h5>
+                <input type="text" pInputText>
+
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;padding-top:6px;">Mobile Number</h5>
+                <p-inputNumber mode="decimal" inputId="withoutgrouping" [useGrouping]="false"></p-inputNumber>
+
+            </span>
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:10px;padding-top:6px;">Gender</h5>
+                <input type="text" pInputText>
+
+            </span>
+
+            <span id="paddBottom">
+
+                <h5 style="padding-bottom:5px;padding-top:6px;">Password</h5>
+                <input type="password" pPassword />
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Forget Password</h5>
+            </span>
+
+
+            <div class="btnCon">
+                <span class="btn">
+                    Register
+                </span>
+                <h5 style="padding-bottom:10px;padding-top:6px;float: right;">Already a member? <b
+                        style="color: black;cursor: pointer;">Login</b></h5>
+            </div>
+        </div>
+    </div>
+</div>
